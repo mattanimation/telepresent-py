@@ -1,0 +1,7 @@
+websockets
+aiortc
+aiohttp
+av
+cv2
+sounddevice
+numpy
