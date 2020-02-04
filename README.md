@@ -10,7 +10,33 @@ This is a client to act as a peer connecting to the [Telepresent](https://www.gi
 * ideally a `coturn` server too
 
 ## Installation
+
+libav-tools doesn't work anymore?
+`sudo apt-get install libav-tools v4l2-ctrl`
+
+ffmpeg
+`sudo add-apt-repository ppa:jonathonf/ffmpeg-4`
+```
+sudo apt-get update
+sudo apt-get install ffmpeg
+```
+for the client
+`pip3 install av`
+
+if there are errors with pip installs, the add the `--no-cache` flag
+
+also
+`sudo apt install libavdevice-dev libavfilter-dev libopus-dev libvpx-dev pkg-config`
+
+and for aiortc
+`apt install libsrtp2-dev`
+
+for sounddevice
+`sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0`
+
+Now can install the python libraries
 `pip3 install -r requirements.txt`
+
 
 ## Useage
 `python3 telepresent_client.py`
